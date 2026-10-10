@@ -1,0 +1,28 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: menu
+    label: Restaurant menu
+    type: file
+    path: data/menu.json
+    format: json
+    fields:
+      - name: special
+        label: Today's special
+        type: string
+      - name: items
+        label: Menu items
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Dish
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: price
+            label: Price (R)
+            type: number
