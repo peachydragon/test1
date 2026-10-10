@@ -1,7 +1,15 @@
 {
   "special": "Slow-cooked lamb shank with mash",
   "items": [
-    { "name": "Ranch Burger", "description": "Beef patty, cheddar, farm relish", "price": 145 },
-    { "name": "Farmstall Breakfast", "description": "Eggs, bacon, toast, grilled tomato", "price": 110 }
+    {
+      "name": "Ranch Burger with fries",
+      "description": "Beef patty, cheddar, farm relish",
+      "price": 145
+    },
+    {
+      "name": "Farmstall Breakfast",
+      "description": "Eggs, bacon, toast, grilled tomato",
+      "price": 110
+    }
   ]
 }
