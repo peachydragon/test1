@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Moss & Maple Menu</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:Georgia,serif;max-width:600px;margin:40px auto;padding:0 16px;color:#3b1f14;background:#f6f0e4}
+h1{text-align:center}.special{background:#fff;padding:12px;border-left:4px solid #b5462b;margin-bottom:24px}
+.item{display:flex;justify-content:space-between;border-bottom:1px solid #d8cbb5;padding:10px 0}
+.item small{display:block;color:#7a6253}</style></head>
+<body><h1>Moss & Maple Menu</h1><div class="special" id="special"></div><div id="menu"></div>
+<script>
+fetch('data/menu.json?v=' + Date.now()).then(r => r.json()).then(d => {
+  document.getElementById('special').textContent = "Today's special: " + d.special;
+  document.getElementById('menu').innerHTML = d.items.map(i =>
+    `<div class="item"><div>${i.name}<small>${i.description}</small></div><div>R${i.price}</div></div>`).join('');
+});
+</script></body></html>
