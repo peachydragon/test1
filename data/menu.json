@@ -10,6 +10,11 @@
       "name": "Farmstall Breakfast",
       "description": "Eggs, bacon, toast, grilled tomato",
       "price": 110
+    },
+    {
+      "name": "double crunch burger",
+      "description": "boop",
+      "price": 123
     }
   ]
 }
